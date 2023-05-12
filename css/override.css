@@ -46,6 +46,10 @@ hr {
     opacity: 0.3;
 }
 
+.highlighter-rouge .highlight, pre, code {
+    background: #eee
+}
+
 body {
     font: 400 16px/1.5 -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', 'Roboto Flex', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     color: #000;
