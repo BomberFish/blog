@@ -24,6 +24,13 @@
 {% assign safetitlepre = "[Blog] " | append: page.author | append: " - " | url_encode %}
 
 <span style="color: silver;">Share on: </span><div id="share-buttons">
+  <div class="browsershare share-button" title="Share this with whatever app you want"    onclick="">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86.6699" height="117.432">
+      <g>
+       <rect height="117.432" opacity="0" width="86.6699" x="0" y="0"/>
+       <path d="M15.332 110.205L71.3379 110.205C81.543 110.205 86.6699 105.127 86.6699 95.0684L86.6699 46.3379C86.6699 36.2793 81.543 31.2012 71.3379 31.2012L57.7148 31.2012L57.7148 39.0625L71.1914 39.0625C76.0254 39.0625 78.8086 41.6992 78.8086 46.7773L78.8086 94.6289C78.8086 99.707 76.0254 102.344 71.1914 102.344L15.4297 102.344C10.5469 102.344 7.86133 99.707 7.86133 94.6289L7.86133 46.7773C7.86133 41.6992 10.5469 39.0625 15.4297 39.0625L28.9551 39.0625L28.9551 31.2012L15.332 31.2012C5.12695 31.2012 0 36.2793 0 46.3379L0 95.0684C0 105.127 5.12695 110.205 15.332 110.205ZM43.3105 71.9727C45.4102 71.9727 47.2168 70.2148 47.2168 68.1641L47.2168 18.0176L46.9238 10.6934L50.1953 14.1602L57.6172 22.0703C58.3008 22.8516 59.2773 23.2422 60.2539 23.2422C62.2559 23.2422 63.8184 21.7773 63.8184 19.7754C63.8184 18.75 63.3789 17.9688 62.6465 17.2363L46.1426 1.31836C45.166 0.341797 44.3359 0 43.3105 0C42.334 0 41.5039 0.341797 40.4785 1.31836L23.9746 17.2363C23.2422 17.9688 22.8516 18.75 22.8516 19.7754C22.8516 21.7773 24.3164 23.2422 26.3672 23.2422C27.2949 23.2422 28.3691 22.8516 29.0527 22.0703L36.4258 14.1602L39.7461 10.6934L39.4531 18.0176L39.4531 68.1641C39.4531 70.2148 41.2109 71.9727 43.3105 71.9727Z" fill="#ffffff" fill-opacity="0.85"/>
+      </g>
+     </svg></div>
   <div class="facebook share-button" title="Share this on Facebook"    onclick="window.open('http://www.facebook.com/share.php?u={{ safeurl }}','popup','width=600,height=600'); return false;">
     <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"/></svg></div>
   <div class="twitter share-button"  title="Share this on Twitter"     onclick="window.open('https://twitter.com/intent/tweet?url={{ safeurl }}&text={{ safetitle }}&via={{ site.twitter_username }}','popup','width=600,height=600'); return false;">
@@ -35,3 +42,12 @@
   <div class="mail share-button"     title="Share this through Email"  onclick="window.open('mailto:?&body={{ safeurl }}&subject={{ safetitlepre }}{{ safetitle }}','popup','width=600,height=600'); return false;">
     <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/></svg></div>
 </div>
+
+<script>
+  const shareData = {
+    url: window.location.href
+}
+  document.querySelector(".browsershare").addEventListener('click', async () => {
+        await navigator.share(shareData);
+});
+</script>
