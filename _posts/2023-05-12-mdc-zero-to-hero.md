@@ -42,7 +42,7 @@ Step 2: In the search bar, enter `https://github.com/BomberFish/DirtyCowKit`. Cl
 
 #### Option 2 (advanced, not recommended): Manually adding the exploit files.
 
-Step 1: Get the exploit files. You can easily find these from somewhere like the [Cowabunga Source Code](https://github.com/leminlimez/Cowabunga/tree/main/MacDirtyCowSwift/Exploit)
+Step 1: Get the exploit files. You can easily find these from somewhere like the [Cowabunga GitHub repository](https://github.com/leminlimez/Cowabunga/tree/main/MacDirtyCowSwift/Exploit).
 
 Step 2: Add the files to your Xcode project, making sure to include them in your bridging header. If you don't know what that is, you're best off using option 1. The steps below are for option 1 only.
 
