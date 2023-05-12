@@ -118,7 +118,7 @@ body {
     @media screen and (max-width: 600px) {
         .site-nav {
             background-color: #323232;
-            border: 1px solid #181818ff;
+            border: none;
         }
         .site-nav .menu-icon>svg {
             fill: #e7e7e7
@@ -373,8 +373,8 @@ code {
 
 @media screen and (max-width: 600px) {
     .site-nav {
-        background-color: #e8e8e8;
-        border: 1px solid #e8e8e800;
+        background-color: #e6e6e6;
+        border: none;
         border-radius: 8px;
         text-align: right
     }
