@@ -78,6 +78,7 @@ body {
 pre,
 code {
   border-radius: 6px;
+  font-family: ui-monospace, 'SF Mono', Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Mono', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 }
 
 @media screen and (max-width: 600px) {
