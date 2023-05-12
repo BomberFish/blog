@@ -60,6 +60,10 @@ body {
   flex-direction:column
 }
 
+.site-header {
+  border-top: 5px solid #a956d9;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: #fff;
@@ -71,7 +75,7 @@ body {
     text-decoration:none
 }
 a:visited {
-  color:#7789e3
+  color:#518aec;
 }
 a:hover {
   color: #eee;
@@ -144,7 +148,7 @@ table td {
 }
 
 .site-header {
-  border-top: 5px solid #f1f1f1;
+  border-top: 5px solid #9A33D4;
   border-bottom: 1px solid #212121;
 }
 .site-title, .site-title:visited {
@@ -162,11 +166,11 @@ table td {
 }
 
 .footer-col-wrapper {
-  color: #484848;
+  color: #686868;
 }
 
 .post-meta {
-  color:#484848
+  color:#686868
 }
 
 .highlight {
