@@ -67,8 +67,8 @@ body {
 
 
 .footer-col-2 {
-  width: -webkit-calc(20% - (15px / 2));
-  width: calc(20% - (15px / 2));
+  width: -webkit-calc(25% - (15px / 2));
+  width: calc(25% - (15px / 2));
 }
 
 pre,
@@ -185,7 +185,7 @@ code {
         background: #333
     }
     .highlighter-rouge .highlight {
-        background: #113
+        background: #212121
     }
     .highlight .c {
         color: #556;

@@ -81,7 +81,7 @@ At the top of your `<Project name>App.swift` file, put `import DirtyCowKit`. The
 
 Your file should look something like this:
 
-```
+```swift
 import MacDirtyCow
 import SwiftUI
 
