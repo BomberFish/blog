@@ -17,7 +17,7 @@ Open Xcode. You should be presented with a screen similar to this:
 
 ![Xcode Startup Screen](https://blog.bomberfish.ca/img/xcode-home.png)
 
-Click "New Project" to create a new project. Select "App" under the "iOS" tab. Click Next and you will be prompted to choose options for the project. Set it up similar to the image below, but make sure to change the Product Name to what you want your app to be called, and the Organization Identifier to whatever you want. Make sure Interface is set to SwiftUI and Language is set to Swift.
+Click "Create a new Xcode project" to create a new project. Select "App" under the "iOS" tab. Click Next and you will be prompted to choose options for the project. Set it up similar to the image below, but make sure to change the Product Name to what you want your app to be called, and the Organization Identifier to whatever you want. Make sure Interface is set to SwiftUI and Language is set to Swift.
 
 ![Xcode Project Options](https://blog.bomberfish.ca/img/xc-proj-opts.png)
 
@@ -28,27 +28,31 @@ Congratulations! You've made your first Xcode project.
 ![Xcode Project](https://blog.bomberfish.ca/img/xc-starter.png)
 
 
+
 ### Adding MDC
 
 Now here comes the fun part: adding the MacDirtyCow exploit.
 
-#### Option 1: Using DirtyCowKit.
+#### Option 1: Using DirtyCowKit
 
 Step 1: In Xcode, under the file menu, click "Add Packages..."
 
 Step 2: In the search bar, enter `https://github.com/BomberFish/DirtyCowKit`. Click "Add Package" and then "Add Package" (again) and it will add the package to your project.
 
-**OPTIONAL:** Add the AbsoluteSolver package from the following link: `https://github.com/BomberFish/AbsoluteSolver-iOS`. AbsoluteSolver will automatically toggle between regular file operations using Swift's `FileManager` and MDC's writes.
+**OPTIONAL:** Add the AbsoluteSolver package from the following link: `https://github.com/BomberFish/AbsoluteSolver-iOS`. AbsoluteSolver will automatically toggle between regular file operations using Swift's `FileManager` and an MDC overwrite.
 
-#### Option 2 (advanced, not recommended): Manually adding the exploit files.
+##### Bonus points if you got the reference. 😉
+
+#### Option 2 (advanced, not recommended): Manually adding the exploit files
 
 Step 1: Get the exploit files. You can easily find these from somewhere like the [Cowabunga GitHub repository](https://github.com/leminlimez/Cowabunga/tree/main/MacDirtyCowSwift/Exploit).
 
-Step 2: Add the files to your Xcode project, making sure to include them in your bridging header. If you don't know what that is, you're best off using option 1. The steps below are for option 1 only.
+Step 2: Add the files to your Xcode project, making sure to include them in your bridging header. If you don't know what that is or are confused, you're best off using option 1. The steps below are for option 1 only.
+
 
 ### Unsandboxing
 
-At the top of your `<Project name>App.swift` file, put `import DirtyCowKit`. Then, under `ContentView()`, add the following code:
+At the top of your `<Project name>App.swift` file, type `import DirtyCowKit`. Then, under `ContentView()`, add the following code:
 
 ```swift
 .onAppear {
@@ -120,18 +124,19 @@ struct DirtyCowExampleApp: App {
 }
 ```
 
+
 ### Using MDC
 
 Here are some examples of using MDC in your app.
 
-##### How to replace a file:
+#### How to replace a file:
 
 ```swift
 import MacDirtyCow
 MacDirtyCow.overwriteFileWithDataImpl(originPath: String, replacementData: Data)
 ```
 
-##### If you opted to add AbsoluteSolver earlier:
+#### If you opted to add AbsoluteSolver earlier:
 
 ```swift
 import AbsoluteSolver
@@ -141,6 +146,6 @@ AbsoluteSolver.replace(at: URL, with: NSData)
 
 ### What now?
 
-I recommend using websites like (Hacking With Swift)[https://www.hackingwithswift.com] to up your Swift knowledge. Also make sure to look at the source code of other MDC applications like Cowabunga, ControlConfig or AppCommander for more advanced usage.
+I recommend using websites like [Hacking With Swift](https://www.hackingwithswift.com) to up your Swift knowledge. Also make sure to look at the source code of other MDC applications like Cowabunga, ControlConfig or AppCommander for more advanced usage.
 
 Otherwise, happy hacking!
