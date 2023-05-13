@@ -39,9 +39,10 @@ defaults:
 
 minima:
   show_excerpts: true
-  github: BomberFish
-  youtube: @bombardierfish
-  rss: rss
-  mastodon:
-     - username: BomberFish
-       instance: fosstodon.org
+  social_links:
+    github: "BomberFish"
+    youtube: "@bombardierfish"
+    rss: rss
+    mastodon:
+     - username: "BomberFish"
+       instance: "fosstodon.org"
