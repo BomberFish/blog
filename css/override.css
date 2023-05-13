@@ -284,7 +284,7 @@ a:visited {
         font-weight: bold
     }
     .highlight .kt {
-        color: #854;
+        color: rgb(68, 104, 136);
         font-weight: bold
     }
     .highlight .m {
