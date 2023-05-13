@@ -13,11 +13,7 @@ github_username: "BomberFish"
 #pinterest_username: username
 youtube_username: "@bombardierfish"
 twitter_username: "bomberfish77"
-#googleplus_username: +username #bruh
 
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
 theme: "minima"
 
 rss: rss
@@ -41,11 +37,11 @@ defaults:
     values:
       tags: Other
 
-minima: 
-  social_links:
-    - platform: github
-      user_url: "https://github.com/BomberFish"
-    - platform: youtube
-      user_url: "https://youtube.com/@bombardierfish"
-    - platform: mastodon
-      user_url: "https://fosstodon.org/@BomberFish"
+minima:
+  show_excerpts: true
+  github: BomberFish
+  youtube: @bombardierfish
+  rss: rss
+  mastodon:
+     - username: BomberFish
+       instance: fosstodon.org
