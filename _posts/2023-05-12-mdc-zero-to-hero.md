@@ -1,7 +1,9 @@
 ## MacDirtyCow app development: From zero to hero.
 
 ### Wait. What exactly is MacDirtyCow?
-[MacDirtyCow](https://nvd.nist.gov/vuln/detail/CVE-2022-46689), often abbreviated as MDC, is a security vunerability that exploits a race condition in XNU's memory system to overwrite the cached version of any given file. Because of its versatility, it has been used in a number of recent iOS customization apps such as Cowabunga.
+[MacDirtyCow](https://nvd.nist.gov/vuln/detail/CVE-2022-46689), often abbreviated as MDC, is a security vunerability that exploits a race condition in XNU's virtual memory system to overwrite the cached version of any given file. Because of its versatility, it has been used in a number of recent iOS customization apps such as Cowabunga.
+
+##### I'm saying this like I'm some mega-nerd who knows how everything works, but in reality I don't even know how copy-on-write works 😭
 
 Now with that out of the way, let's get into how you can make your own app that leverages the MacDirtyCow exploit.
 
@@ -37,11 +39,12 @@ Now here comes the fun part: adding the MacDirtyCow exploit.
 
 Step 1: In Xcode, under the file menu, click "Add Packages..."
 
-Step 2: In the search bar, enter `https://github.com/BomberFish/DirtyCowKit`. Click "Add Package" and then "Add Package" (again) and it will add the package to your project.
+Step 2: In the search bar, enter `https://github.com/BomberFish/DirtyCowKit`. Click "Add Package" and then "Add Package" (again) and it should add the package to your project.
 
-**OPTIONAL:** Add the AbsoluteSolver package from the following link: `https://github.com/BomberFish/AbsoluteSolver-iOS`. AbsoluteSolver will automatically toggle between regular file operations using Swift's `FileManager` and an MDC overwrite.
 
-##### Bonus points if you got the reference. 😉
+**OPTIONAL:** Add the AbsoluteSolver package from the following link: `https://github.com/BomberFish/AbsoluteSolver-iOS`. Absolute Solver will automatically toggle between regular file operations using Swift's `FileManager` and an MDC-based operation.
+
+##### Bonus points if you got [the reference](https://www.youtube.com/watch?v=mImFz8mkaHo). 😉
 
 #### Option 2 (advanced, not recommended): Manually adding the exploit files
 
@@ -149,3 +152,9 @@ AbsoluteSolver.replace(at: URL, with: NSData)
 I recommend using websites like [Hacking With Swift](https://www.hackingwithswift.com) to up your Swift knowledge. Also make sure to look at the source code of other MDC applications like Cowabunga, ControlConfig or AppCommander for more advanced usage.
 
 Otherwise, happy hacking!
+
+
+
+### Updates
+
+- 2023-05-12: Minor updates
