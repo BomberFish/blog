@@ -155,6 +155,6 @@ Otherwise, happy hacking!
 
 
 
-### Updates
+### Revisions
 
 - 2023-05-12: Minor updates
