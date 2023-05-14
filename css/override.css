@@ -62,7 +62,8 @@ body {
     font-kerning: normal;
     display: flex;
     min-height: 100vh;
-    flex-direction: column
+    flex-direction: column;
+    overflow-x: none;
 }
 
 .site-header {
