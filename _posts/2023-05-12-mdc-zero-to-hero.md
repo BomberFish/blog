@@ -7,7 +7,6 @@
 
 Now with that out of the way, let's get into how you can make your own app that leverages the MacDirtyCow exploit.
 
-
 ## Prerequisites
 
 - A Mac with Xcode 14+ installed
@@ -29,13 +28,11 @@ Congratulations! You've made your first Xcode project.
 
 ![Xcode Project](https://blog.bomberfish.ca/img/xc-starter.png)
 
-
-
 ## Adding MDC
 
 Now here comes the fun part: adding the MacDirtyCow exploit.
 
-#### Option 1: Using DirtyCowKit
+### Option 1: Using DirtyCowKit
 
 Step 1: In Xcode, under the file menu, click "Add Packages..."
 
@@ -85,8 +82,7 @@ At the top of your `<Project name>App.swift` file, type `import DirtyCowKit`. Th
 } 
 ```
 
-
-#### Your file should look something like this:
+**Your file should look something like this:**
 
 ```swift
 import MacDirtyCow
@@ -132,20 +128,19 @@ struct DirtyCowExampleApp: App {
 
 Here are some examples of using MDC in your app.
 
-### How to replace a file:
+### How to replace a file
 
 ```swift
 import MacDirtyCow
 MacDirtyCow.overwriteFileWithDataImpl(originPath: String, replacementData: Data)
 ```
 
-### If you opted to add AbsoluteSolver earlier:
+### If you opted to add AbsoluteSolver earlier
 
 ```swift
 import AbsoluteSolver
 AbsoluteSolver.replace(at: URL, with: NSData)
 ```
-
 
 ## What now?
 
@@ -153,8 +148,7 @@ I recommend using websites like [Hacking With Swift](https://www.hackingwithswif
 
 Otherwise, happy hacking!
 
-
-
 ### Revisions
 
 - 2023-05-12: Minor updates
+- 2023-09-26: Fix formatting
