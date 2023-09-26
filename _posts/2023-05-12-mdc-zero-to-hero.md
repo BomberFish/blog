@@ -1,9 +1,9 @@
-## MacDirtyCow app development: From zero to hero.
+# MacDirtyCow app development: From zero to hero.
 
 ### Wait. What exactly is MacDirtyCow?
 [MacDirtyCow](https://nvd.nist.gov/vuln/detail/CVE-2022-46689), often abbreviated as MDC, is a security vunerability that exploits a race condition in XNU's virtual memory system to overwrite the cached version of any given file. Because of its versatility, it has been used in a number of recent iOS customization apps such as Cowabunga.
 
-##### I'm saying this like I'm some mega-nerd who knows how everything works, but in reality I don't even know how copy-on-write works 😭
+> I'm saying this like I'm some mega-nerd who knows how everything works, but in reality I don't even know how copy-on-write works 😭
 
 Now with that out of the way, let's get into how you can make your own app that leverages the MacDirtyCow exploit.
 
