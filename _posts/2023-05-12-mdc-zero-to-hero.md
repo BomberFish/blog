@@ -1,6 +1,6 @@
 # MacDirtyCow app development: From zero to hero.
 
-### Wait. What exactly is MacDirtyCow?
+## Wait. What exactly is MacDirtyCow?
 [MacDirtyCow](https://nvd.nist.gov/vuln/detail/CVE-2022-46689), often abbreviated as MDC, is a security vunerability that exploits a race condition in XNU's virtual memory system to overwrite the cached version of any given file. Because of its versatility, it has been used in a number of recent iOS customization apps such as Cowabunga.
 
 > I'm saying this like I'm some mega-nerd who knows how everything works, but in reality I don't even know how copy-on-write works 😭
@@ -8,12 +8,12 @@
 Now with that out of the way, let's get into how you can make your own app that leverages the MacDirtyCow exploit.
 
 
-### Prerequisites
+## Prerequisites
 
 - A Mac with Xcode 14+ installed
 - An iOS device with an iOS version of 16.1.2 or below. I recommend anywhere from 15.0 to 16.1.2.
 
-### Getting Started with your Xcode Project
+## Getting Started with your Xcode Project
 
 Open Xcode. You should be presented with a screen similar to this:
 
@@ -31,7 +31,7 @@ Congratulations! You've made your first Xcode project.
 
 
 
-### Adding MDC
+## Adding MDC
 
 Now here comes the fun part: adding the MacDirtyCow exploit.
 
@@ -44,16 +44,16 @@ Step 2: In the search bar, enter `https://github.com/BomberFish/DirtyCowKit`. Cl
 
 **OPTIONAL:** Add the AbsoluteSolver package from the following link: `https://github.com/BomberFish/AbsoluteSolver-iOS`. Absolute Solver will automatically toggle between regular file operations using Swift's `FileManager` and an MDC-based operation.
 
-##### Bonus points if you got [the reference](https://www.youtube.com/watch?v=mImFz8mkaHo). 😉
+> Bonus points if you got [the reference](https://www.youtube.com/watch?v=mImFz8mkaHo). 😉
 
-#### Option 2 (advanced, not recommended): Manually adding the exploit files
+### Option 2 (advanced, not recommended): Manually adding the exploit files
 
 Step 1: Get the exploit files. You can easily find these from somewhere like the [Cowabunga GitHub repository](https://github.com/leminlimez/Cowabunga/tree/main/MacDirtyCowSwift/Exploit).
 
 Step 2: Add the files to your Xcode project, making sure to include them in your bridging header. If you don't know what that is or are confused, you're best off using option 1. The steps below are for option 1 only.
 
 
-### Unsandboxing
+## Unsandboxing
 
 At the top of your `<Project name>App.swift` file, type `import DirtyCowKit`. Then, under `ContentView()`, add the following code:
 
@@ -86,7 +86,7 @@ At the top of your `<Project name>App.swift` file, type `import DirtyCowKit`. Th
 ```
 
 
-Your file should look something like this:
+#### Your file should look something like this:
 
 ```swift
 import MacDirtyCow
@@ -128,18 +128,18 @@ struct DirtyCowExampleApp: App {
 ```
 
 
-### Using MDC
+## Using MDC
 
 Here are some examples of using MDC in your app.
 
-#### How to replace a file:
+### How to replace a file:
 
 ```swift
 import MacDirtyCow
 MacDirtyCow.overwriteFileWithDataImpl(originPath: String, replacementData: Data)
 ```
 
-#### If you opted to add AbsoluteSolver earlier:
+### If you opted to add AbsoluteSolver earlier:
 
 ```swift
 import AbsoluteSolver
@@ -147,7 +147,7 @@ AbsoluteSolver.replace(at: URL, with: NSData)
 ```
 
 
-### What now?
+## What now?
 
 I recommend using websites like [Hacking With Swift](https://www.hackingwithswift.com) to up your Swift knowledge. Also make sure to look at the source code of other MDC applications like Cowabunga, ControlConfig or AppCommander for more advanced usage.
 
