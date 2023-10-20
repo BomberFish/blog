@@ -1,6 +1,6 @@
 # Proxying on the Edge: Part 1
 
-> This article is a part of an ongoing series on running web proxies using Cloudflare Workers.
+> This post is a part of an ongoing series on running web proxies using Cloudflare Workers.
 
 Recently, I made a proxy called [Superposition](https://superposition.bomberfish.ca), running on Cloudflare's Workers serverless platform.
 
