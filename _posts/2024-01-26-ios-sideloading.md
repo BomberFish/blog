@@ -36,9 +36,18 @@ These two quotes from Apple signify that you will still have to submit apps to A
 
 These two points mean that it will be impossible to install jailbreaks (or jailed tools) through this new "sideloading" mechanism.
 
+## Conclusion
+
+Apple's recent announcement of allowing third-party app stores for customers in the EU is not much more than a case of malicious compliance. They did the bare minimum to comply with the law, and it shows. If you want a better explanation, I highly recommend [this video](https://youtu.be/_6dbNzFD0zM).
+
 ## TL;DR
 
 - The new "sideloading" in iOS 17.4 sucks.
 - You have to pay Apple not only $99 a year for the Dev Program, but €1,000,000 so Apple can "trust" you.
 - All apps still need to be reviewed by Apple.
 - It will be impossible to install jailbreaks/jailed tools with this new sideloading mechanism.
+
+## Updates
+
+- 2023-01-26 (shortly after initial publish)
+    - Add conclusion
