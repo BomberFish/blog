@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 70 version
+*/
+
 h1 {
     font-weight: 700;
 }
@@ -33,6 +40,9 @@ hr {
 /* Post navigation links */
 
 .post_navi {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -67,7 +77,9 @@ hr {
 .post_navi .post_navi-arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     font-size: 2.5em;
     opacity: 0.3;
 }
@@ -85,10 +97,18 @@ body {
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
-    font-kerning: normal;
+    -webkit-font-kerning: normal;
+            font-kerning: normal;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     overflow-x: none;
 }
 
@@ -104,7 +124,8 @@ body {
 
 pre,
 code {
-  border-radius: 6px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
   font-family: ui-monospace, 'SF Mono', Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Mono', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 }
 
@@ -120,7 +141,8 @@ a:visited {
   .site-nav {
       background-color: #e8e8e8;
       border: 1px solid #e8e8e800;
-      border-radius: 8px;
+      -webkit-border-radius: 8px;
+              border-radius: 8px;
       text-align: right
   }
 }
