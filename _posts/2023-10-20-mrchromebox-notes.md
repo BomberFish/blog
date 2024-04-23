@@ -8,6 +8,11 @@ Tested on Dell Chromebook 3100, with MrChromebox's RW_LEGACY flashed via SH1MMER
 - Got to winPE, trackpad did not work. USB mouse did though.
 - Couldn't start installation, complained about missing disk drivers
 
+## Windows 10
+
+- Worked fine, needed to install EC drivers from CoolStar.
+- Make sure to use a dedicated Windows USB installer such as WoeUSB on Linux.
+
 ## Fedora 38 Workstation
 
 - Booted and installed fine
