@@ -4,7 +4,13 @@ Apple [just announced](https://www.apple.com/newsroom/2024/01/apple-announces-ch
 
 > **Note:** Scroll to the bottom of the article for a TL;DR.
 
+## Updates
+
+Recently, Apple has added the capability to install apps directly from a developer's website. However, the review requirements discussed below still apply.
+
 ## Access control
+
+**NEW:** iOS appears to use a new daemon, `countryd`, to determine eligibility. It checks various device factors, such as Wi-Fi region, SIM card, and more.
 
 In iOS 17.3, a new MobileGestalt key called `DeviceSupportsEUCapabilities` was added, which may have something to do with sideloading. If somehow a sandbox escape is released for 17.4, it might be possible to enable this even if you don't live in the EU. However, it may not be worth it. Let's find out.
 
@@ -43,11 +49,13 @@ Apple's recent announcement of allowing third-party app stores for customers in 
 ## TL;DR
 
 - The new "sideloading" in iOS 17.4 sucks.
-- You have to pay Apple not only $99 a year for the Dev Program, but €1,000,000 so Apple can "trust" you.
+- Developers have to pay Apple not only $99 a year for the Dev Program, but also €1,000,000 so Apple can "trust" them.
 - All apps still need to be reviewed by Apple.
 - It will be impossible to install jailbreaks/jailed tools with this new sideloading mechanism.
 
 ## Updates
 
-- 2023-01-26 (shortly after initial publish)
+- 2024-01-26 (shortly after initial publish)
     - Add conclusion
+- 2024-04-23
+    - Fix wording, clarify web installation and `countryd`
