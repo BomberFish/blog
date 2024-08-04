@@ -130,7 +130,8 @@ body {
 }
 
 .site-header {
-    border-top: 5px solid var(--primary-color);
+    border-top-color: var(--primary-color);
+    border-bottom-color: var(--nav-border-color);
 }
 
 .footer-col-2 {
@@ -159,4 +160,8 @@ a:visited {
         border-radius: 8px;
         text-align: right;
     }
+}
+
+.site-footer {
+    border-color: var(--nav-border-color);
 }
