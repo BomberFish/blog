@@ -44,5 +44,5 @@ minima:
     youtube: "@bombardierfish"
     rss: rss
     mastodon:
-     - username: "BomberFish"
-       instance: "fosstodon.org"
+     - username: "fish"
+       instance: "wetdry.world"
