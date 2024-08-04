@@ -4,6 +4,7 @@
     --text-color: #000;
     --background-color: #fff;
     --link-color: #a956d9;
+    --link-hover-color: #9A33D4;
     --visited-link-color: #9A33D4;
     --blockquote-border-color: #e8e8e8;
     --nav-background-color: #e8e8e8;
@@ -19,6 +20,7 @@
         --text-color: #fff;
         --background-color: #000;
         --link-color: #a956d9;
+        --link-hover-color: #9A33D4;
         --visited-link-color: #9A33D4;
         --blockquote-border-color: #444;
         --nav-background-color: #444;
@@ -151,6 +153,10 @@ a {
 
 a:visited {
     color: var(--visited-link-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
 }
 
 @media screen and (max-width: 600px) {
