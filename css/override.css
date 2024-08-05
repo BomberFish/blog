@@ -1,6 +1,19 @@
+* {
+    accent-color: #cba6f7;
+}
+
+::selection {
+    background: #cba6f788;
+}
+
+#not-share-buttons {
+    display: inline-block!important;
+}
+
 :root {
     --primary-color: #8839ef;
     --text-color: #4c4f69;
+    --secondary-text-color: #6c6f85;
     --background-color: #dce0e8;
     --link-color: var(--primary-color);
     --link-hover-color: #6819af;
@@ -8,7 +21,7 @@
     --blockquote-border-color: #ccd0da;
     --nav-background-color: #ccd0da;
     --nav-border-color: #ccd0da;
-    --nav-icon-color: #6c6f85;
+    --nav-icon-color: #5c5f77;
     --code-background-color: #ccd0da;
 }
 
@@ -16,6 +29,7 @@
     :root {
         --primary-color: #cba6f7;
         --text-color: #cdd6f4;
+        --secondary-text-color: #a6adc8;
         --background-color: #1e1e2e;
         --link-color: var(--primary-color);;
         --link-hover-color: #b892e6;
@@ -23,11 +37,21 @@
         --blockquote-border-color: #313244;
         --nav-background-color: #313244;
         --nav-border-color: #313244;
-        --nav-icon-color: #a6adc8;
+        --nav-icon-color: #bac2de;
         --code-background-color: #313244;
     }
 }
 
+.svg-icon {
+    fill: var(--nav-icon-color);
+}
+
+.post-meta,
+.footer-col-wrapper,
+blockquote,
+.post_navi .post_navi-item {
+    color: var(--secondary-text-color)!important;
+}
 
 h1 {
     font-weight: 700;
