@@ -258,6 +258,10 @@ a:hover {
   background: var(--surface0);
 }
 
+pre, code {
+    border-color: var(--overlay2)
+}
+
 /* https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md#code-editors */
 
 .hljs-keyword {

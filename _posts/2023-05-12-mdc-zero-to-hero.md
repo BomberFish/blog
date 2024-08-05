@@ -41,8 +41,6 @@ Step 2: In the search bar, enter `https://github.com/BomberFish/DirtyCowKit`. Cl
 
 **OPTIONAL:** Add the AbsoluteSolver package from the following link: `https://github.com/BomberFish/AbsoluteSolver-iOS`. Absolute Solver will automatically toggle between regular file operations using Swift's `FileManager` and an MDC-based operation.
 
-> Bonus points if you got [the reference](https://www.youtube.com/watch?v=mImFz8mkaHo). 😉
-
 ### Option 2 (advanced, not recommended): Manually adding the exploit files
 
 Step 1: Get the exploit files. You can easily find these from somewhere like the [Cowabunga GitHub repository](https://github.com/leminlimez/Cowabunga/tree/main/MacDirtyCowSwift/Exploit).
