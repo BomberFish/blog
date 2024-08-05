@@ -1,3 +1,7 @@
+---
+tags: Apple
+---
+
 # iOS Sideloading: The Rundown
 
 Apple [just announced](https://www.apple.com/newsroom/2024/01/apple-announces-changes-to-ios-safari-and-the-app-store-in-the-european-union/) sideloading for the EU on iOS 17.4 and above. What does this mean for you?

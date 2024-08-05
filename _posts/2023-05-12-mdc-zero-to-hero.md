@@ -1,3 +1,7 @@
+---
+tags: Apple Tutorials
+---
+
 # MacDirtyCow app development: From zero to hero.
 
 ## Wait. What exactly is MacDirtyCow?
