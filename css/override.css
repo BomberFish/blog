@@ -30,7 +30,6 @@
   --sapphire: var(--ctp-latte-sapphire);
   --blue: var(--ctp-latte-blue);
   --lavender: var(--ctp-latte-lavender);
-  --text: var(--ctp-latte-text);
   --subtext0: var(--ctp-latte-subtext0);
   --subtext1: var(--ctp-latte-subtext1);
   --surface0: var(--ctp-latte-surface0);
@@ -71,7 +70,6 @@
     --sapphire: var(--ctp-mocha-sapphire);
     --blue: var(--ctp-mocha-blue);
     --lavender: var(--ctp-mocha-lavender);
-    --text: var(--ctp-mocha-text);
     --subtext0: var(--ctp-mocha-subtext0);
     --subtext1: var(--ctp-mocha-subtext1);
     --surface0: var(--ctp-mocha-surface0);
@@ -256,7 +254,7 @@ a:hover {
 
 /* highlighting */
 .hljs {
-  color: var(--subtext1);
+  color: var(--text-color);
   background: transparent;
 }
 
@@ -275,7 +273,9 @@ code {
 
 /* https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md#code-editors */
 
-.hljs-keyword {
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal {
     color: var(--mauve)
 }
 
@@ -291,6 +291,10 @@ code {
 .hljs-char.escape_,
 .hljs-regex {
     color: var(--pink)
+}
+
+.hljs-subst {
+    color: var(--subtext1)
 }
 
 .hljs-comment,
@@ -333,11 +337,11 @@ code {
 }
 
 .hljs-addition {
-    color: var(--text);
+    color: var(--text-color);
     background: rgba(var(--green-raw), 0.25);
 }
 
 .hljs-deletion {
-    color: var(--text);
+    color: var(--text-color);
     background: rgba(var(--red-raw), 0.25);
 }
