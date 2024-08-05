@@ -149,7 +149,6 @@ hr {
 
 .post_navi-label {
   font-size: 0.8em;
-  opacity: 0.5;
 }
 
 .post_navi .post_navi-item {
@@ -175,12 +174,16 @@ hr {
   right: 0;
 }
 
-.post_navi .post_navi-arrow {
+.post_navi-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2.5em;
-  opacity: 0.3;
+}
+
+.post_navi-arrow,
+.post_navi-label {
+  color: var(--overlay2)!important;
 }
 
 body {
