@@ -1,200 +1,320 @@
+@import url("./catppuccin.css");
+
 * {
-    accent-color: #cba6f7;
+  accent-color: #cba6f7;
 }
 
 ::selection {
-    background: #cba6f788;
+  background: #cba6f788;
 }
 
 #not-share-buttons {
-    display: inline-block!important;
+  display: inline-block !important;
 }
 
 :root {
-    --primary-color: #8839ef;
-    --text-color: #4c4f69;
-    --secondary-text-color: #6c6f85;
-    --background-color: #dce0e8;
-    --link-color: var(--primary-color);
-    --link-hover-color: #6819af;
-    --visited-link-color: #6819af;
-    --blockquote-border-color: #ccd0da;
-    --nav-background-color: #ccd0da;
-    --nav-border-color: #ccd0da;
-    --nav-icon-color: #5c5f77;
-    --code-background-color: #ccd0da;
+  --rosewater: var(--ctp-latte-rosewater);
+  --flamingo: var(--ctp-latte-flamingo);
+  --pink: var(--ctp-latte-pink);
+  --mauve: var(--ctp-latte-mauve);
+  --red: var(--ctp-latte-red);
+  --red-raw: var(--ctp-latte-red-raw);
+  --maroon: var(--ctp-latte-maroon);
+  --peach: var(--ctp-latte-peach);
+  --yellow: var(--ctp-latte-yellow);
+  --green: var(--ctp-latte-green);
+  --green-raw: var(--ctp-latte-green-raw);
+  --teal: var(--ctp-latte-teal);
+  --sky: var(--ctp-latte-sky);
+  --sapphire: var(--ctp-latte-sapphire);
+  --blue: var(--ctp-latte-blue);
+  --lavender: var(--ctp-latte-lavender);
+  --text: var(--ctp-latte-text);
+  --subtext0: var(--ctp-latte-subtext0);
+  --subtext1: var(--ctp-latte-subtext1);
+  --surface0: var(--ctp-latte-surface0);
+  --overlay2: var(--ctp-latte-overlay2);
+
+
+  --primary-color: var(--ctp-latte-mauve);
+  --text-color: var(--ctp-latte-text);
+  --secondary-text-color: var(--ctp-latte-subtext0);
+  --background-color: var(--ctp-latte-base);
+  --link-color: var(--primary-color);
+  --link-hover-color: #6819af;
+  --visited-link-color: #6819af;
+  --blockquote-border-color: var(--ctp-latte-surface0);
+  --nav-background-color: var(--ctp-latte-surface0);
+  --nav-border-color: var(--ctp-latte-surface0);
+  --nav-icon-color: var(--ctp-latte-subtext1);
+  --code-background-color: var(--ctp-latte-surface0);
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --primary-color: #cba6f7;
-        --text-color: #cdd6f4;
-        --secondary-text-color: #a6adc8;
-        --background-color: #1e1e2e;
-        --link-color: var(--primary-color);;
-        --link-hover-color: #b892e6;
-        --visited-link-color: #b892e6;
-        --blockquote-border-color: #313244;
-        --nav-background-color: #313244;
-        --nav-border-color: #313244;
-        --nav-icon-color: #bac2de;
-        --code-background-color: #313244;
-    }
+  :root {
+    --rosewater: var(--ctp-mocha-rosewater);
+    --flamingo: var(--ctp-mocha-flamingo);
+    --pink: var(--ctp-mocha-pink);
+    --mauve: var(--ctp-mocha-mauve);
+    --red: var(--ctp-mocha-red);
+    --red-raw: var(--ctp-mocha-red-raw);
+    --maroon: var(--ctp-mocha-maroon);
+    --peach: var(--ctp-mocha-peach);
+    --yellow: var(--ctp-mocha-yellow);
+    --green: var(--ctp-mocha-green);
+    --green-raw: var(--ctp-mocha-green-raw);
+    --teal: var(--ctp-mocha-teal);
+    --sky: var(--ctp-mocha-sky);
+    --sapphire: var(--ctp-mocha-sapphire);
+    --blue: var(--ctp-mocha-blue);
+    --lavender: var(--ctp-mocha-lavender);
+    --text: var(--ctp-mocha-text);
+    --subtext0: var(--ctp-mocha-subtext0);
+    --subtext1: var(--ctp-mocha-subtext1);
+    --surface0: var(--ctp-mocha-surface0);
+    --overlay2: var(--ctp-mocha-overlay2);
+    
+
+    --primary-color: var(--ctp-mocha-mauve);
+    --text-color: var(--ctp-mocha-text);
+    --secondary-text-color: var(--ctp-mocha-subtext0);
+    --background-color: var(--ctp-mocha-base);
+    --link-color: var(--primary-color);
+    --link-hover-color: #b892e6;
+    --visited-link-color: #b892e6;
+    --blockquote-border-color: var(--ctp-mocha-surface0);
+    --nav-background-color: var(--ctp-mocha-surface0);
+    --nav-border-color: var(--ctp-mocha-surface0);
+    --nav-icon-color: var(--ctp-mocha-subtext1);
+    --code-background-color: var(--ctp-mocha-surface0);
+  }
 }
 
 .svg-icon,
-.site-nav .menu-icon>svg {
-    fill: var(--nav-icon-color);
+.site-nav .menu-icon > svg {
+  fill: var(--nav-icon-color);
 }
 
 .post-meta,
 .footer-col-wrapper,
 blockquote,
 .post_navi .post_navi-item {
-    color: var(--secondary-text-color)!important;
+  color: var(--secondary-text-color) !important;
 }
 
 h1 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 h2 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 h3,
 h4,
 h5,
 h6 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 blockquote {
-    letter-spacing: 0.001em;
-    font-style: normal;
-    font-size: 16px;
-    border-left: 2px solid var(--blockquote-border-color);
-    padding-left: 12px;
+  letter-spacing: 0.001em;
+  font-style: normal;
+  font-size: 16px;
+  border-left: 2px solid var(--blockquote-border-color);
+  padding-left: 12px;
 }
 
 .site-title,
 .site-title:visited {
-    font-weight: 600;
-    color: var(--text-color);
-    letter-spacing: 0.001em;
+  font-weight: 600;
+  color: var(--text-color);
+  letter-spacing: 0.001em;
 }
 
 hr {
-    margin-top: 30px;
-    margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* Post navigation links */
 
 .post_navi {
-    display: flex;
+  display: flex;
 }
 
 .post_navi-label {
-    font-size: 0.8em;
-    opacity: 0.5;
+  font-size: 0.8em;
+  opacity: 0.5;
 }
 
 .post_navi .post_navi-item {
-    padding: 0 2.2em;
-    width: 50%;
-    position: relative;
-    color: inherit !important;
+  padding: 0 2.2em;
+  width: 50%;
+  position: relative;
+  color: inherit !important;
 }
 
 .post_navi .nav_prev {
-    text-align: left;
+  text-align: left;
 }
 
 .post_navi .nav_next {
-    text-align: right;
+  text-align: right;
 }
 
 .post_navi .nav_prev .post_navi-arrow {
-    left: 0;
+  left: 0;
 }
 
 .post_navi .nav_next .post_navi-arrow {
-    right: 0;
+  right: 0;
 }
 
 .post_navi .post_navi-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2.5em;
-    opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5em;
+  opacity: 0.3;
 }
 
 .highlighter-rouge .highlight,
 pre,
 code {
-    background: var(--code-background-color);
+  background: var(--code-background-color);
 }
 
 body {
-    font: 400 16px/1.5 -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', 'Roboto Flex', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    color: var(--text-color);
-    background-color: var(--background-color);
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    -webkit-font-kerning: normal;
-    font-kerning: normal;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    overflow-x: none;
+  font: 400 16px/1.5 -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI Variable", "Segoe UI", "Roboto Flex", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--text-color);
+  background-color: var(--background-color);
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-x: none;
 }
 
 .site-header {
-    border-top-color: var(--primary-color);
-    border-bottom-color: var(--nav-border-color);
+  border-top-color: var(--primary-color);
+  border-bottom-color: var(--nav-border-color);
 }
 
 .footer-col-2 {
-    width: calc(25% - (15px / 2));
+  width: calc(25% - (15px / 2));
 }
 
 pre,
 code {
-    border-radius: 6px;
-    font-family: ui-monospace, 'SF Mono', Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Mono', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  border-radius: 6px;
+  font-family: ui-monospace, "SF Mono", Menlo, Monaco, "Cascadia Mono",
+    "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Mono",
+    "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
 a {
-    color: var(--link-color);
-    text-decoration: none;
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 a:visited {
-    color: var(--visited-link-color);
+  color: var(--visited-link-color);
 }
 
 a:hover {
-    color: var(--link-hover-color);
+  color: var(--link-hover-color);
 }
 
 @media screen and (max-width: 600px) {
-    .site-nav {
-        background-color: var(--nav-background-color);
-        border: 1px solid var(--nav-border-color);
-        border-radius: 8px;
-        text-align: right;
-    }
+  .site-nav {
+    background-color: var(--nav-background-color);
+    border: 1px solid var(--nav-border-color);
+    border-radius: 8px;
+    text-align: right;
+  }
 }
 
 .site-footer {
-    border-color: var(--nav-border-color);
+  border-color: var(--nav-border-color);
 }
 
 .site-nav .page-link {
-    color: var(--text-color);
+  color: var(--text-color);
+}
+
+/* highlighting */
+.hljs {
+  color: var(--subtext1);
+  background: var(--surface0);
+}
+
+/* https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md#code-editors */
+
+.hljs-keyword {
+    color: var(--mauve)
+}
+
+.hljs-string {
+    color: var(--green)
+}
+
+.hljs-symbol {
+    color: var(--red)
+}
+
+.hljs-char.escape_,
+.hljs-regex {
+    color: var(--pink)
+}
+
+.hljs-comment {
+    color: var(--overlay2)
+}
+
+.hljs-number {
+    color: var(--peach)
+}
+
+.hljs-operator {
+    color: var(--sky)
+}
+
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function {
+    color: var(--blue)
+}
+
+.hljs-params {
+    color: var(--maroon)
+}
+
+.hljs-built_in,
+.hljs-symbol {
+    color: var(--red)
+}
+
+.hljs-property {
+    color: var(--blue)
+}
+
+.hljs-addition {
+    color: var(--text);
+    background: rgba(var(--green-raw), 0.25);
+}
+
+.hljs-deletion {
+    color: var(--text);
+    background: rgba(var(--red-raw), 0.25);
 }
