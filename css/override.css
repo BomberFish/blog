@@ -34,6 +34,7 @@
   --subtext1: var(--ctp-latte-subtext1);
   --surface0: var(--ctp-latte-surface0);
   --overlay2: var(--ctp-latte-overlay2);
+  --mantle: var(--ctp-latte-mantle);
 
 
   --primary-color: var(--ctp-latte-mauve);
@@ -73,6 +74,7 @@
     --subtext1: var(--ctp-mocha-subtext1);
     --surface0: var(--ctp-mocha-surface0);
     --overlay2: var(--ctp-mocha-overlay2);
+    --mantle: var(--ctp-mocha-mantle);
     
 
     --primary-color: var(--ctp-mocha-mauve);
@@ -179,12 +181,6 @@ hr {
   opacity: 0.3;
 }
 
-.highlighter-rouge .highlight,
-pre,
-code {
-  background: var(--code-background-color);
-}
-
 body {
   font: 400 16px/1.5 -apple-system, system-ui, BlinkMacSystemFont,
     "Segoe UI Variable", "Segoe UI", "Roboto Flex", Roboto, Oxygen-Sans, Ubuntu,
@@ -258,8 +254,19 @@ a:hover {
   background: var(--surface0);
 }
 
-pre, code {
-    border-color: var(--overlay2)
+.highlighter-rouge .highlight,
+pre,
+code {
+    background: var(--mantle);
+    border-color: var(--surface0);
+}
+
+pre {
+    border-radius: 1em;
+}
+
+code {
+    border-radius: 0.3em;
 }
 
 /* https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md#code-editors */
