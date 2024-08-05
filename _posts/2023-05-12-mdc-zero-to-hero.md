@@ -55,7 +55,6 @@ At the top of your `<Project name>App.swift` file, type `import DirtyCowKit`. Th
 ```swift
 .onAppear {
     if #available(iOS 16.2, *) {
-        // I'm sorry 16.2 dev beta 1 users, you are a vast minority.
         print("Throwing not supported error (mdc patched)")
         DispatchQueue.main.async {
             let alert = UIAlertController(title: "Not Supported", message: "This version of iOS is not supported.", preferredStyle: .alert)
@@ -66,7 +65,6 @@ At the top of your `<Project name>App.swift` file, type `import DirtyCowKit`. Th
         // grant r/w access
         if #available(iOS 15, *) {
             print("Escaping Sandbox...")
-            // asyncAfter(deadline: .now())
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
                 do {
                     try MacDirtyCow.unsandbox()
@@ -93,7 +91,6 @@ struct DirtyCowExampleApp: App {
             ContentView()
                 .onAppear {
                     if #available(iOS 16.2, *) {
-                        // I'm sorry 16.2 dev beta 1 users, you are a vast minority.
                         print("Throwing not supported error (mdc patched)")
                         DispatchQueue.main.async {
                             let alert = UIAlertController(title: "Not Supported", message: "This version of iOS is not supported.", preferredStyle: .alert)
@@ -104,7 +101,6 @@ struct DirtyCowExampleApp: App {
                         // grant r/w access
                         if #available(iOS 15, *) {
                             print("Escaping Sandbox...")
-                            // asyncAfter(deadline: .now())
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
                                 do {
                                     try MacDirtyCow.unsandbox()
