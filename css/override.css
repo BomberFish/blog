@@ -42,7 +42,8 @@
     }
 }
 
-.svg-icon {
+.svg-icon,
+.site-nav .menu-icon>svg {
     fill: var(--nav-icon-color);
 }
 
