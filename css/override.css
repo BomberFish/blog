@@ -17,6 +17,7 @@
   --flamingo: var(--ctp-latte-flamingo);
   --pink: var(--ctp-latte-pink);
   --mauve: var(--ctp-latte-mauve);
+  --mauve-raw: var(--ctp-latte-mauve-raw);
   --red: var(--ctp-latte-red);
   --red-raw: var(--ctp-latte-red-raw);
   --maroon: var(--ctp-latte-maroon);
@@ -57,6 +58,7 @@
     --flamingo: var(--ctp-mocha-flamingo);
     --pink: var(--ctp-mocha-pink);
     --mauve: var(--ctp-mocha-mauve);
+    --mauve-raw: var(--ctp-mocha-mauve-raw);
     --red: var(--ctp-mocha-red);
     --red-raw: var(--ctp-mocha-red-raw);
     --maroon: var(--ctp-mocha-maroon);
@@ -204,6 +206,7 @@ body {
 .site-header {
   border-top-color: var(--primary-color);
   border-bottom-color: var(--nav-border-color);
+  box-shadow: inset 0px 50px 46px -54px rgba(var(--mauve-raw), 0.2);
 }
 
 .footer-col-2 {
