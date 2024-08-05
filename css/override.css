@@ -206,7 +206,7 @@ body {
 .site-header {
   border-top-color: var(--primary-color);
   border-bottom-color: var(--nav-border-color);
-  box-shadow: inset 0px 50px 46px -54px rgba(var(--mauve-raw), 0.2);
+  box-shadow: inset 0px 50px 60px -45px rgba(var(--mauve-raw), 0.2);
 }
 
 .footer-col-2 {
