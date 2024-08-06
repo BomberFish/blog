@@ -11,11 +11,11 @@
   #not-share-buttons > div {
     height: 36px;
     position: relative;
-    text-align: center;
   }
   #not-share-buttons > .not-share-button {
     width: 32px;
     float: left;
+    text-align: center;
   }
   #not-share-buttons > div > svg {
     height: 16px;
@@ -26,25 +26,25 @@
     cursor: pointer;
   }
   #not-share-buttons > div.browsershare:hover > svg {
-    fill: #ffffff;
+    fill: var(--primary-color);
   }
   #not-share-buttons > div.facebook:hover > svg {
-    fill: #3b5998;
+    fill: var(--blue);
   }
   #not-share-buttons > div.not-twitter:hover > svg {
-    fill: #55acee;
+    fill: var(--sky);
   }
   #not-share-buttons > div.linkedin:hover > svg {
-    fill: #0077b5;
+    fill: var(--sapphire);
   }
   #not-share-buttons > div.gplus:hover > svg {
-    fill: #dd4b39;
+    fill: var(--red);
   }
   #not-share-buttons > div.mail:hover > svg {
-    fill: #7d7d7d;
+    fill: var(--);
   }
   #not-share-buttons > div.instagram:hover > svg {
-    fill: #c73b92;
+    fill: var(--pink);
   }
   #not-share-buttons > div.facebook > svg {
     height: 18px;
@@ -145,6 +145,7 @@
   .fedi-instance {
     background-color: var(--surface0);
     padding: 8px;
+    padding-top: 14px;
     position: absolute;
     top: 20px;
     left: 0;
@@ -157,22 +158,22 @@
       "Segoe UI Variable", "Segoe UI", "Roboto Flex", Roboto, Oxygen-Sans,
       Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, "Noto Sans",
       sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 700;
+    font-weight: 500;
     font-size: 12.5px;
   }
   .fedi-share svg {
     max-height: 19px;
-    margin-top: -2px;
+    margin-top: 3.75px;
     margin-left: -0.5px;
   }
   .fedi-instance input[name="fedi-instance-input"] {
-    background-color: #00000000;
+    background-color: transparent;
     border: none;
-    color: white;
-    border-bottom: 2px solid var(--mauve);
+    color: var(--text);
+    border-bottom: 2px solid var(--primary-color);
     font-size: 14px;
     font-weight: 700;
-    max-width: 130px;
+    max-width: 175px;
   }
   .fedi-instance input[name="fedi-instance-input"][class="invalid"] {
     border-bottom: 2px solid var(--red);
@@ -181,6 +182,13 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
+  #instancename {
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
   @-webkit-keyframes shake {
     41%,
     8% {
@@ -207,18 +215,24 @@
   .fedi-share input:focus {
     outline: none;
   }
+  .fedi-share-button-wrap {
+    width: 100%;
+  }
   .fedi-share button {
     background-color: #00000000;
     color: var(--text);
+    background-color: var(--primary-color);
+    border-radius: 6px;
     border: none;
     font-size: 14px;
     font-weight: 700;
     padding: 0;
     margin: 8px 0 0;
     cursor: pointer;
+    margin-left: auto;
   }
   .fedi-share button:hover {
-    color: var(--mauve);
+    background: color-mix(in srgb, var(--primary-color), white 15%);
   }
 </style>
 
@@ -273,13 +287,15 @@ append: page.author | append: " - " | url_encode %}
   <div class="fedi-share fedi-share-md">
     <input type="checkbox" class="fedi-check-toggle" />
     <div class="fedi-instance">
-      <span>Instance: </span>
+      <span id="instancename">Instance: </span>
       <input
         type="textbox"
         name="fedi-instance-input"
         placeholder="wetdry.world"
       />
-      <button class="fedi-share-button">Share</button>
+      <div class="fedi-share-button-wrap">
+        <button class="fedi-share-button">Share</button>
+      </div>
     </div>
     <label class="fedi-top fedi-check-label">
       <!-- CC BY-SA 4.0 - Erik Uden -->
@@ -287,6 +303,8 @@ append: page.author | append: " - " | url_encode %}
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
         viewBox="0 0 713 176"
+        width
+        height
       >
         <g>
           <g transform="matrix(1.0065 0 0 1.0126 -4.299 -8.0083)">
@@ -297,7 +315,7 @@ append: page.author | append: " - " | url_encode %}
                 color="#000000"
                 color-rendering="auto"
                 dominant-baseline="auto"
-                fill="#a730b8"
+                fill="var(--mauve)"
                 image-rendering="auto"
                 solid-color="#000000"
                 style="
@@ -325,7 +343,7 @@ append: page.author | append: " - " | url_encode %}
                 color="#000000"
                 color-rendering="auto"
                 dominant-baseline="auto"
-                fill="#5496be"
+                fill="var(--sky)"
                 image-rendering="auto"
                 solid-color="#000000"
                 style="
@@ -381,7 +399,7 @@ append: page.author | append: " - " | url_encode %}
                 color="#000000"
                 color-rendering="auto"
                 dominant-baseline="auto"
-                fill="#d0188f"
+                fill="var(--pink)"
                 image-rendering="auto"
                 solid-color="#000000"
                 style="
@@ -437,7 +455,7 @@ append: page.author | append: " - " | url_encode %}
                 color="#000000"
                 color-rendering="auto"
                 dominant-baseline="auto"
-                fill="#30b873"
+                fill="var(--green)"
                 image-rendering="auto"
                 solid-color="#000000"
                 style="
@@ -465,7 +483,7 @@ append: page.author | append: " - " | url_encode %}
                 color="#000000"
                 color-rendering="auto"
                 dominant-baseline="auto"
-                fill="#f47601"
+                fill="var(--peach)"
                 image-rendering="auto"
                 solid-color="#000000"
                 style="
@@ -493,7 +511,7 @@ append: page.author | append: " - " | url_encode %}
                 color="#000000"
                 color-rendering="auto"
                 dominant-baseline="auto"
-                fill="#dbb210"
+                fill="var(--yellow)"
                 image-rendering="auto"
                 solid-color="#000000"
                 style="
@@ -522,7 +540,7 @@ append: page.author | append: " - " | url_encode %}
                 cx="106.27"
                 cy="51.536"
                 r="16.571"
-                fill="#ffca00"
+                fill="var(--yellow)"
               />
               <ellipse
                 transform="rotate(3.1178)"
@@ -530,28 +548,28 @@ append: page.author | append: " - " | url_encode %}
                 cy="110.19"
                 rx="16.571"
                 ry="16.571"
-                fill="#64ff00"
+                fill="var(--green)"
               />
               <circle
                 transform="rotate(3.1178)"
                 cx="135.76"
                 cy="190.28"
                 r="16.571"
-                fill="#00a3ff"
+                fill="var(--sapphire)"
               />
               <circle
                 transform="rotate(3.1178)"
                 cx="48.559"
                 cy="181.11"
                 r="16.571"
-                fill="#9500ff"
+                fill="var(--mauve)"
               />
               <circle
                 transform="rotate(3.1178)"
                 cx="30.329"
                 cy="95.367"
                 r="16.571"
-                fill="#f00"
+                fill="var(--red)"
               />
             </g>
           </g>
@@ -569,7 +587,7 @@ append: page.author | append: " - " | url_encode %}
             cy="70.595"
             rx="16.678"
             ry="16.779"
-            fill="#64ff00"
+            fill="var(--green)"
             fill-opacity=".99597"
           />
           <path
@@ -577,7 +595,7 @@ append: page.author | append: " - " | url_encode %}
             color="#000000"
             color-rendering="auto"
             dominant-baseline="auto"
-            fill="#5496be"
+            fill="var(--teal)"
             image-rendering="auto"
             shape-rendering="auto"
             solid-color="#000000"
@@ -611,7 +629,7 @@ append: page.author | append: " - " | url_encode %}
             color="#000000"
             color-rendering="auto"
             dominant-baseline="auto"
-            fill="#30b873"
+            fill="var(--teal)"
             image-rendering="auto"
             shape-rendering="auto"
             solid-color="#000000"
@@ -641,7 +659,7 @@ append: page.author | append: " - " | url_encode %}
           color="#000000"
           color-rendering="auto"
           dominant-baseline="auto"
-          fill="#ebe305"
+          fill="var(--yellow)"
           image-rendering="auto"
           shape-rendering="auto"
           solid-color="#000000"
@@ -670,7 +688,7 @@ append: page.author | append: " - " | url_encode %}
           color="#000000"
           color-rendering="auto"
           dominant-baseline="auto"
-          fill="#57c115"
+          fill="var(--green)"
           image-rendering="auto"
           shape-rendering="auto"
           solid-color="#000000"
