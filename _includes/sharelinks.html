@@ -10,15 +10,16 @@
   }
   #not-share-buttons > div {
     position: relative;
-    text-align: left;
+    text-align: center;
+  }
+  #not-share-buttons > .not-share-button {
     height: 36px;
     width: 32px;
     float: left;
-    text-align: center;
   }
   #not-share-buttons > div > svg {
     height: 16px;
-    fill: #d5d5d5 !important;
+    fill: var(--subtext0) !important;
     margin-top: 10px;
   }
   #not-share-buttons > div:hover {
@@ -80,10 +81,6 @@
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 
-  #not-share-buttons * {
-    display: initial !important;
-  }
-
   .fedi-check-toggle {
     height: 0;
     width: 0;
@@ -114,8 +111,8 @@
   .fedi-share-sm .fedi-top {
     cursor: pointer;
     position: absolute;
-    width: 18px;
-    height: 15px;
+    width: auto;
+    height: 100%;
     top: 0;
     left: 0;
     padding: 4px 8px;
@@ -149,7 +146,7 @@
     z-index: 0;
   }
   .fedi-instance {
-    background-color: #292d37;
+    background-color: var(--crust);
     padding: 8px;
     position: absolute;
     top: 20px;
@@ -159,7 +156,10 @@
   }
   .fedi-share span {
     vertical-align: top;
-    font-family: sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI Variable", "Segoe UI", "Roboto Flex", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 700;
     font-size: 12.5px;
   }
@@ -172,13 +172,13 @@
     background-color: #00000000;
     border: none;
     color: white;
-    border-bottom: 2px solid #3087d5;
+    border-bottom: 2px solid var(--mauve);
     font-size: 14px;
     font-weight: 700;
     max-width: 130px;
   }
   .fedi-instance input[name="fedi-instance-input"][class="invalid"] {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--red);
     animation-name: shake;
     animation-duration: 100ms;
     animation-timing-function: ease-in-out;
@@ -205,14 +205,14 @@
     }
   }
   .fedi-share input::placeholder {
-    color: #c7c7cd;
+    color: var(--overlay2);
   }
   .fedi-share input:focus {
     outline: none;
   }
   .fedi-share button {
     background-color: #00000000;
-    color: white;
+    color: var(--text);
     border: none;
     font-size: 14px;
     font-weight: 700;
@@ -221,7 +221,7 @@
     cursor: pointer;
   }
   .fedi-share button:hover {
-    color: #3087d5;
+    color: var(--mauve);
   }
 </style>
 
