@@ -283,22 +283,22 @@ a:hover {
 }
 
 /* highlighting */
-.hljs {
+.hljs,
+.highlighter-rouge .highlight {
   color: var(--text-color);
   background: transparent;
 }
 
-.highlighter-rouge .highlight,
 pre,
 code {
     border-radius: 1em;
-    background: var(--mantle);
+    background: var(--mantle)!important;
     border-color: var(--surface0);
 }
 
 code {
     border-radius: 0.1em;
-    border: 0;
+    border: none;
 }
 
 /* https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md#code-editors */
