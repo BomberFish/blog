@@ -226,6 +226,10 @@ hr {
   border: 2px dashed var(--nav-border-color);
 }
 
+subt {
+  color: var(--subtext0);
+}
+
 a {
   color: var(--link-color);
   text-decoration: none;
