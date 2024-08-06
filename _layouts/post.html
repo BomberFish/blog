@@ -18,7 +18,7 @@ layout: default
     </p>
     <p class="post-tags">
       {%- if page.tags -%}
-        <span>Tagged:</span>
+        <span>Tagged: </span>
         {%- for tag in page.tags -%}
           <span>{{ tag }}</span>{%- unless forloop.last -%}, {% endunless -%}
         {%- endfor -%}
