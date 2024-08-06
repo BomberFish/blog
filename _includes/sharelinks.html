@@ -166,6 +166,9 @@
     margin-top: 3.75px;
     margin-left: -0.5px;
   }
+  .fedi-share svg path:not([fill~="var(--text-color)"]) {
+    filter: brightness(0.8);
+  }
   .fedi-instance input[name="fedi-instance-input"] {
     background-color: transparent;
     border: none;
@@ -427,7 +430,7 @@ append: page.author | append: " - " | url_encode %}
                 color="#000000"
                 color-rendering="auto"
                 dominant-baseline="auto"
-                fill="#5b36e9"
+                fill="var(--blue)"
                 image-rendering="auto"
                 solid-color="#000000"
                 style="
