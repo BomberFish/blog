@@ -215,6 +215,12 @@ site-title {
   box-shadow: inset 0px 50px 45px -55px rgba(var(--mauve-raw), 0.2);
 }
 
+.post-meta,
+.post-tags {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
 .footer-col-2 {
   width: calc(25% - (15px / 2));
 }
@@ -226,12 +232,12 @@ code {
 }
 
 hr {
-  border: 2px dashed var(--nav-border-color);
+  border: 1.75px dashed var(--nav-border-color);
 }
 
 subt {
   color: var(--subtext0);
-  font-size: 0.8em;
+  font-size: 0.9rem;
 }
 
 a {
