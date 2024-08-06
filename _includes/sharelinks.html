@@ -2,6 +2,7 @@
   #not-share-buttons {
     display: inline-block;
     vertical-align: middle;
+    padding-top: 8px;
   }
   #not-share-buttons:after {
     content: "";
@@ -19,7 +20,7 @@
   }
   #not-share-buttons > div > svg {
     height: 16px;
-    fill: var(--subtext0) !important;
+    fill: var(--subtext0);
     margin-top: 10px;
   }
   #not-share-buttons > div:hover {
@@ -41,7 +42,7 @@
     fill: var(--red);
   }
   #not-share-buttons > div.mail:hover > svg {
-    fill: var(--);
+    fill: var(--maroon);
   }
   #not-share-buttons > div.instagram:hover > svg {
     fill: var(--pink);
@@ -52,7 +53,8 @@
   }
   #not-share-buttons > div.not-twitter > svg {
     height: 20px;
-    margin-top: 8px;
+    margin-top: 7px;
+    margin-left: 0.35rem;
   }
   #not-share-buttons > div.browsershare > svg {
     height: 23px;
@@ -78,7 +80,7 @@
   }
   .not-share-button > svg,
   .not-share-button > svg:hover {
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition: fill 0.2s ease;
   }
 
   .fedi-check-toggle {
@@ -247,7 +249,7 @@
 safetitle = page.title | url_encode %} {% assign safetitlepre = "[Blog] " |
 append: page.author | append: " - " | url_encode %}
 
-<span style="color: var(--nav-icon-color)">Share this post: </span>
+<span style="color: var(--subtext0)">Share this post:</span>
 <div id="not-share-buttons">
   <div
     id="browsershare"
@@ -269,7 +271,7 @@ append: page.author | append: " - " | url_encode %}
     class="not-twitter not-share-button"
     style="display: block !important"
     title="Share this on Twitter"
-    onclick="window.open('https://twitter.com/intent/tweet?url={{ safeurl }}&text={{ safetitle }}&via={{ site.twitter_username }}','popup','width=600,height=600'); return false;"
+    onclick="window.open('https://x.com/intent/tweet?url={{ safeurl }}&text={{ safetitle }}&via={{ site.twitter_username }}','popup','width=600,height=600'); return false;"
   >
     <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
       <path
