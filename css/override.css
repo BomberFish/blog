@@ -282,6 +282,11 @@ a:hover {
   color: var(--text-color);
 }
 
+/* center images */
+p:has(img) {
+  text-align: center;
+}
+
 /* highlighting */
 .hljs,
 .highlighter-rouge .highlight {
