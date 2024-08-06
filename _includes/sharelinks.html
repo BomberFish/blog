@@ -154,10 +154,7 @@
   }
   .fedi-share span {
     vertical-align: top;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont,
-      "Segoe UI Variable", "Segoe UI", "Roboto Flex", Roboto, Oxygen-Sans,
-      Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, "Noto Sans",
-      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--font-display);
     font-weight: 500;
     font-size: 12.5px;
   }
@@ -188,8 +185,6 @@
   #instancename {
     font-weight: 700;
     font-size: 1.7rem;
-    color: var(--background-color);
-    background-color: var(--primary-color);
   }
 
   @-webkit-keyframes shake {
@@ -223,16 +218,17 @@
   }
   .fedi-share button {
     background-color: #00000000;
-    color: var(--text);
+    color: var(--background-color);
     background-color: var(--primary-color);
     border-radius: 6px;
     border: none;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 0;
     margin: 8px 0 0;
     cursor: pointer;
     margin-left: auto;
+    padding: 4px;
   }
   .fedi-share button:hover {
     background: color-mix(in srgb, var(--primary-color), white 15%);

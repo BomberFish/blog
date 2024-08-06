@@ -185,10 +185,7 @@ hr {
 }
 
 body {
-  font: 400 16px / 1.5 -apple-system, system-ui, BlinkMacSystemFont,
-    "Segoe UI Variable", "Segoe UI", "Roboto Flex", Roboto, Oxygen-Sans, Ubuntu,
-    Cantarell, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 400 16px / 1.5 var(--font-body);
   color: var(--text-color);
   background-color: var(--background-color);
   -webkit-text-size-adjust: 100%;
@@ -204,6 +201,12 @@ body {
   overflow-x: none;
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-display)
+}
+
 .site-header {
   border-top-color: var(--primary-color);
   border-bottom-color: var(--nav-border-color);
@@ -217,9 +220,7 @@ body {
 pre,
 code {
   border-radius: 6px;
-  font-family: ui-monospace, "SF Mono", Menlo, Monaco, "Cascadia Mono",
-    "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Mono",
-    "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  font-family: var(--font-mono);
 }
 
 hr {
