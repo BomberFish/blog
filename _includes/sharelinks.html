@@ -161,6 +161,9 @@
     font-weight: 500;
     font-size: 12.5px;
   }
+  .fedi-share input {
+    font-family: var(--font-display);
+  }
   .fedi-top svg {
     max-height: 19px;
     margin-top: 3.75px;
@@ -187,9 +190,12 @@
     animation-timing-function: ease;
     animation-iteration-count: infinite;
   }
+  .fedi-instance > *:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+  }
   #instancename {
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   @keyframes shake {
