@@ -80,7 +80,7 @@
   }
   .not-share-button > svg,
   .not-share-button > svg:hover {
-    transition: fill 0.2s ease;
+    transition: fill 0.3s;
   }
 
   .fedi-check-toggle {
@@ -166,10 +166,12 @@
     margin-top: 3.75px;
     margin-left: -0.5px;
   }
-  .fedi-share svg path:not([fill~="-color)"]) {
+  .fedi-share svg path:not([fill~="var(--text-color)"]),
+  .fedi-share svg path:not([fill~="var(--background-color)"]) {
     filter: brightness(0.8);
   }
   .fedi-instance input[name="fedi-instance-input"] {
+    transition: border-color 0.2s;
     background-color: transparent;
     border: none;
     color: var(--text);
@@ -179,10 +181,11 @@
     max-width: 175px;
   }
   .fedi-instance input[name="fedi-instance-input"][class="invalid"] {
+    transition: border-color 0.2s;
     border-bottom: 2px solid var(--red);
     animation-name: shake;
-    animation-duration: 100ms;
-    animation-timing-function: ease-in-out;
+    animation-duration: 120ms;
+    animation-timing-function: ease;
     animation-iteration-count: infinite;
   }
   #instancename {

@@ -1,5 +1,6 @@
 ---
-tags: Apple Tutorials
+tags: Tutorials Apple
+image: /img/xc-starter.png
 ---
 
 # MacDirtyCow app development: From zero to hero.
@@ -20,17 +21,17 @@ Now with that out of the way, let's get into how you can make your own app that 
 
 Open Xcode. You should be presented with a screen similar to this:
 
-![Xcode Startup Screen](https://blog.bomberfish.ca/img/xcode-home.png)
+![Xcode Startup Screen](/img/xcode-home.png)
 
 Click "Create a new Xcode project" to create a new project. Select "App" under the "iOS" tab. Click Next and you will be prompted to choose options for the project. Set it up similar to the image below, but make sure to change the Product Name to what you want your app to be called, and the Organization Identifier to whatever you want. Make sure Interface is set to SwiftUI and Language is set to Swift.
 
-![Xcode Project Options](https://blog.bomberfish.ca/img/xc-proj-opts.png)
+![Xcode Project Options](/img/xc-proj-opts.png)
 
 Click next and save the directory wherever you want.
 
 Congratulations! You've made your first Xcode project.
 
-![Xcode Project](https://blog.bomberfish.ca/img/xc-starter.png)
+![Xcode Project](/img/xc-starter.png)
 
 ## Adding MDC
 

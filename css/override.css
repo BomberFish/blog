@@ -98,6 +98,7 @@
 }
 
 .post-meta,
+.post-tags,
 .footer-col-wrapper,
 blockquote,
 .post_navi .post_navi-item {
@@ -203,7 +204,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+site-title {
   font-family: var(--font-display)
 }
 
