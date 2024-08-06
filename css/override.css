@@ -222,6 +222,10 @@ code {
     "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
+hr {
+  border: 2px dashed var(--nav-border-color);
+}
+
 a {
   color: var(--link-color);
   text-decoration: none;
