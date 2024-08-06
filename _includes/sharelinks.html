@@ -73,8 +73,8 @@
     left: 1px;
   }
   #not-share-buttons > div.mail > svg {
-    height: 14px;
-    margin-top: 11px;
+    height: 24px;
+    margin-top: 5px;
   }
   .not-share-button > svg,
   .not-share-button > svg:hover {
@@ -133,6 +133,7 @@
   }
   .fedi-share-md {
     width: 93px;
+    margin-left: 0.75rem;
   }
   .fedi-share-sm {
     width: 34px;
@@ -187,7 +188,7 @@
     font-size: 1.7rem;
   }
 
-  @-webkit-keyframes shake {
+  @keyframes shake {
     41%,
     8% {
       -webkit-transform: translateX(-10px);
@@ -215,6 +216,7 @@
   }
   .fedi-share-button-wrap {
     width: 100%;
+    display: flex;
   }
   .fedi-share-button {
     color: var(--background-color);
@@ -230,6 +232,11 @@
     padding: 0.5rem;
     font-family: var(--font-body);
     font-size: 0.9rem;
+  }
+  .fedi-share-button svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    /* padding-top: 1px; */
   }
   .fedi-share button:hover {
     background: color-mix(in srgb, var(--primary-color), white 15%);
