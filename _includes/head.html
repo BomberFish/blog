@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
   {% feed_meta %}
-  
+
   <!-- Begin highlight.js support -->
   <link rel="stylesheet" href="/js/highlightjs/styles/github.css">
 
@@ -25,10 +25,18 @@
   <script type="text/javascript"> hljs.highlightAll(); </script>
   <!-- end highlight.js support -->
 
+  <!-- CSS Variable polyfill for IE and older mainstream browsers -->
+  <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+
   <link rel="stylesheet" href="https://bomberfish.ca/typography.css">
+  <link rel="preload" as="style" type="text/css" href="https://bomberfish.ca/typography.css">
+
+  <link rel="stylesheet" type="text/css" href="/css/catppuccin.css">
+  <link rel="preload" as="style" type="text/css" href="/css/catppuccin.css">
+
   <link rel="stylesheet" type="text/css" href="/css/override.css">
   <link rel="preload" as="style" type="text/css" href="/css/override.css">
-  <!-- 100% privacy friendly analytics --> 
-  <script data-collect-dnt="true" async defer src="https://site-stats.bomberfish.ca/latest.js"></script> 
+  <!-- 100% privacy friendly analytics -->
+  <script data-collect-dnt="true" async defer src="https://site-stats.bomberfish.ca/latest.js"></script>
   <noscript><img src="https://site-stats.bomberfish.ca/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 </head>

@@ -7,6 +7,10 @@ github_username: "BomberFish"
 youtube_username: "@bomberfish77"
 twitter_username: "bomberfish77"
 
+mastodon:
+ - username: "fish"
+   instance: "wetdry.world"
+
 theme: "minima"
 
 rss: rss
@@ -14,7 +18,7 @@ rss: rss
 kramdown:
   syntax_highlighter: rouge
   math_engine: mathjax
-    
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
