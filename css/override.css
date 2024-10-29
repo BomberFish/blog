@@ -311,38 +311,38 @@ code {
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-literal {
-    color: var(--mauve)
+    color: var(--mauve);
 }
 
 .hljs-string,
 .hljs-meta .hljs-string {
-    color: var(--green)
+    color: var(--green);
 }
 
 .hljs-symbol {
-    color: var(--red)
+    color: var(--red);
 }
 
 .hljs-char.escape_,
 .hljs-regex {
-    color: var(--pink)
+    color: var(--pink);
 }
 
 .hljs-subst {
-    color: var(--subtext1)
+    color: var(--subtext1);
 }
 
 .hljs-comment,
 .hljs-doctag {
-    color: var(--overlay2)
+    color: var(--overlay2);
 }
 
 .hljs-number {
-    color: var(--peach)
+    color: var(--peach);
 }
 
 .hljs-operator {
-    color: var(--sky)
+    color: var(--sky);
 }
 
 .hljs-title,
@@ -350,16 +350,16 @@ code {
 .hljs-title.class_.inherited__,
 .hljs-title.function,
 .hljs-property {
-    color: var(--blue)
+    color: var(--blue);
 }
 
 .hljs-params {
-    color: var(--maroon)
+    color: var(--maroon);
 }
 
 .hljs-built_in,
 .hljs-symbol {
-    color: var(--red)
+    color: var(--red);
 }
 
 .hljs-type,
@@ -367,8 +367,13 @@ code {
 .hljs-selector-class,
 .hljs-selector-id,
 .hljs-attr,
-.hljs-attribute {
-    color: var(--yellow)
+.hljs-attribute,
+.hljs-meta {
+    color: var(--yellow);
+}
+
+.hljs-literal {
+    font-weight: 600;
 }
 
 .hljs-addition {
@@ -379,4 +384,9 @@ code {
 .hljs-deletion {
     color: var(--text-color);
     background: rgba(var(--red-raw), 0.25);
+}
+
+.hljs-punctuation {
+    color: var(--subtext0);
+    font-weight: 300;
 }
