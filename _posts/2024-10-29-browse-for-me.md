@@ -8,6 +8,10 @@ Hello! In this article, I’d like to go over how I was able to make an Arc Brow
 
 > In this article, I’ll refer to The Browser Company of New York as “BCNY”, and Browse For Me as “BFM”.
 
+## Update (2025-03-04)
+
+BCNY seems to have resolved this issue... by disabling the sharing of BFM pages. The API endpoint seems to be down as well. Existing links however, still work.
+
 ## The goal
 Make a shared BFM link display whatever content I want.
 
