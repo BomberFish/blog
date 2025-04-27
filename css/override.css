@@ -203,10 +203,10 @@ body {
 }
 
 h1,
-h2,
-h3,
-site-title {
-    font-family: var(--font-display), sans-serif;
+h2:not(article h2),
+.site-title {
+    font-family: var(--font-serif), serif;
+    font-weight: bold;
 }
 
 .site-header {
