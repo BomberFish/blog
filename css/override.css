@@ -130,9 +130,15 @@ blockquote {
 
 .site-title,
 .site-title:visited {
-    font-weight: 600;
+    font-weight: bold;
     color: var(--text-color);
     letter-spacing: 0.001em;
+    font-size: 30px;
+}
+
+.footer-heading {
+    font-size: 24px;
+    margin-bottom: 6px;
 }
 
 hr {
@@ -207,6 +213,10 @@ h2:not(article h2),
 .site-title {
     font-family: var(--font-serif), serif;
     font-weight: bold;
+}
+
+.post-title {
+    font-size: 64px;
 }
 
 .site-header {
