@@ -33,6 +33,8 @@
     --subtext0: var(--ctp-latte-subtext0);
     --subtext1: var(--ctp-latte-subtext1);
     --surface0: var(--ctp-latte-surface0);
+    --surface1: var(--ctp-latte-surface1);
+    --surface2: var(--ctp-latte-surface2);
     --overlay2: var(--ctp-latte-overlay2);
     --mantle: var(--ctp-latte-mantle);
 
@@ -73,6 +75,8 @@
         --subtext0: var(--ctp-mocha-subtext0);
         --subtext1: var(--ctp-mocha-subtext1);
         --surface0: var(--ctp-mocha-surface0);
+        --surface1: var(--ctp-mocha-surface1);
+        --surface2: var(--ctp-mocha-surface2);
         --overlay2: var(--ctp-mocha-overlay2);
         --mantle: var(--ctp-mocha-mantle);
 
@@ -140,6 +144,14 @@ blockquote {
     font-size: 24px;
     margin-bottom: 6px;
 }
+
+.post-content h2 {
+    font-size: 42px;
+    font-family: var(--font-serif);
+    font-weight: bold;
+        border-bottom: 1px solid var(--surface1);
+}
+
 
 hr {
     margin-top: 30px;
@@ -217,6 +229,7 @@ h2:not(article h2),
 
 .post-title {
     font-size: 64px;
+    border-bottom: 1px solid var(--surface1);
 }
 
 .site-header {
