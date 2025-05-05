@@ -12,7 +12,7 @@ Now without any further ado, let's get into the cool stuff!
 > Please note that this is far from complete and should not be considered complete documentation. It might be updated in the future. Also, please hire me Apple :3
 
 ## How I did it
-This is very simple. I simply opened the [Apple Music Web Client](https://beta.music.apple.com) in my browser, opened the Network tab in Chrome's DevTools, and watched any fetch requests it made.
+This is very simple. I simply opened [Apple Music's web client](https://beta.music.apple.com) in my browser, opened the Network tab in Chrome's DevTools, and watched any fetch requests it made.
 
 The base URL for all requests is `https://amp-api.music.apple.com`.
 
