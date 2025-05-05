@@ -1,10 +1,9 @@
 ---
-blog: Writeup
+tags: Writeup
+description: While working on a tool which transfers playlists between music streaming services, I had to reverse-engineer Apple Music's API. This article goes over some of the endpoints the API has to offer.
 ---
 # Notes on reverse-engineering the Apple Music API
-I've recently been working on Transcribe, a tool which transfers playlists between music streaming services directly inside your browser ([Demo video](https://youtu.be/MshSHxytkdQ)). To add support for Apple Music, I had to reverse-engineer its API. 
-
-Now, you may be wondering:
+I've recently been working on Transcribe, a tool which transfers playlists between music streaming services directly inside your browser ([Demo video](https://youtu.be/MshSHxytkdQ)). To add support for Apple Music, I had to reverse-engineer its API. Now, you may be wondering:
 ## Why not just use MusicKit?
 For anyone who doesn't know, MusicKit (JS) is Apple Music's **official API**. The issue with MusicKit is that using it requires an active Apple Developer Program membership. This would require me to pay Apple almost $150 every year, which is money I do not have. So, I had to resort to a more legally dubious method.
 
